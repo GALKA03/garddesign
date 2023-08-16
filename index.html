@@ -1,12 +1,233 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwindcss</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-mainGray">
+    <header
+      class="container mx-auto py-[24px] jg:px-0 bg-white relative flex w-1262 items-center justify-between text-neutral-600"
+    >
+      <div>
+        <img src="./publik/image/giarddesign.png" alt="logo" />
+      </div>
+      <nav
+        class="text-base font-normal leading-6 tracking-tight text-black dark:text-white"
+      >
+        <ul class="w-full flex items-center justify-between">
+          <li>
+            <select
+              data-te-select-init
+              data-te-select-visible-options="3"
+              id="ofertaSelect"
+            >
+              <option value="1">Oferta</option>
+              <option value="2" data-href="https://example.com/link2">
+                Two
+              </option>
+              <option value="3" data-href="https://example.com/link3">
+                Three
+              </option>
+              <option value="4" data-href="https://example.com/link4">
+                Four
+              </option>
+              <option value="5" data-href="https://example.com/link5">
+                Five
+              </option>
+            </select>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
+              >O firmie</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
+              >Realizacje</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
+              >Kontakt</a
+            >
+          </li>
+          <li id="searchIcon" class="cursor-pointer flex items-center">
+            <img id="search" src="./publik/svg/search.svg" alt="search" />
+            <input
+              type="text"
+              placeholder="Search..."
+              class="border p-2 rounded ml-2 hidden"
+            />
+            <img
+              id="cross"
+              src="./publik/svg/cross-svgrepo-com.svg"
+              alt="cross"
+              class="ml-2 hidden"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="flex mb-[120px] bg-mainColor">
+        <div
+          class="flex flex-col justify-center px-4 py-8 md:py-0 md:pl-8 md:pr-16 md:w-[688px]"
+        >
+          <h1 class="text-black text-5xl font-medium leading-tight">
+            Nowoczesna aranżacja Twojego ogrodu
+          </h1>
+          <p class="text-gray-600 mt-4">
+            Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+            realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+            podejściem do każdego projektu.
+          </p>
+          <div class="flex w-full mt-[72px]">
+            <button
+              class="mr-9 bg-transparent justify-between rounded-3xl items-center min-w-min py-[14px] px-[26px] text-mainGreen border-2 border-mainGreen hover:text-mainGray hover:bg-mainGreen focus:outline-none focus:ring-2 focus:ring-mainGreen focus:text-mainGray transition-all ease-in-out duration-400"
+            >
+              Skontaktuj się z nami
+            </button>
+            <button
+              class="mr-9 bg-transparent justify-between rounded-3xl items-center min-w-min py-[14px] px-[26px] text-mainGreen border-2 border-mainGreen hover:text-mainGray hover:bg-mainGreen focus:outline-none focus:ring-2 focus:ring-mainGreen focus:text-mainGray transition-all ease-in-out duration-400 flex"
+            >
+              Zobacz nasze realizacje
+              <img
+                class="ml-1 fill-mainGreen hover:fill-mainGray transition-colors duration-400"
+                src="./publik/svg/arrowDown.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          class="w-full relative md:w-[688px] h-[737px] md:h-auto md:order-2"
+        >
+          <img
+            src="/publik/image/hero-1x.jpg"
+            alt="hero"
+            class="w-full h-full object-cover md:object-center"
+          />
+          <div
+            class="bg-btnCol flex justify-center items-center absolute bottom-0 right-0"
+          >
+            <button class="py-6 px-8">
+              <img src="./publik/svg/left-arrow.svg" alt="left" />
+            </button>
+            <button class="py-6 px-8">
+              <img src="./publik/svg/Arrow-right.svg" alt="right" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- work section -->
+      <section class="mb-[96px] bg-mainGray">
+        <div class="w-[1040px] ml-auto mr-auto">
+          <p
+            class="text-sm mb-4 leading-6 tracking-tight text-mainGreen mt-4"
+          ></p>
+          <h2
+            class="text-4xl mb-8 font-semibold italic leading-115 text-black dark:text-white"
+          >
+            Działamy kompleksowo
+          </h2>
+          <p class="text-black dark:text-white font-normal text-base leading-6">
+            Oferujemy kompletną obsługę inwestycji terenów zielonych.
+            Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
+            Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie,
+            a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
+          </p>
+        </div>
+      </section>
+      <!-- about section -->
+      <section class="bg-mainGray mb-[160px]">
+        <ul class="flex justify-around items-center w-full">
+          <li class="w-[378px] px-10 py-12 bg-white rounded-3xl">
+            <ul class="">
+              <li class="mb-8">
+                <img src="./publik/svg/progects.svg" alt="" />
+              </li>
+              <li class="mb-3 "><h3 class="text-black text-[28px] dark:text-white font-medium text-xl leading-[32.2px] tracking-[1.4px]" >Projekty</h3></li>
+              <li class="mb-[63px]">
+                <p class="text-black text-[14px] dark:text-white font-normal text-sm leading-[21px] tracking-[0.14px]" >
+                  Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+                  wykorzystaniem istniejącej przestrzeni.
+                </p>
+              </li>
+        <li>
+            <button
+               class="relative flex items-center text-mainGreen dark:text-green font-normal text-center text-base leading-[24px] tracking-[0.16px] pb-1 focus:outline-none border-b-2 border-mainGreen">
+                Dowiedz się więcej
+                <img class="ml-[10px]" src="./publik/svg/greenArrow-right.svg" alt="" />
+            </button>
+        </li>
+            </ul>
+          </li>
+          <li class="w-[378px] px-10 py-12 bg-white rounded-3xl">
+            <ul class="">
+              <li class="mb-8">
+                <img src="./publik/svg/wisual.svg" alt="" />
+              </li>
+              <li class="mb-3">
+                <h3 class="text-black text-[28px] dark:text-white font-medium text-xl leading-[32.2px] tracking-[1.4px]" >Wizualizacje</h3>
+              </li>
+              <li class="mb-[63px]">
+                <p class="text-black text-[14px] dark:text-white font-normal text-sm leading-[21px] tracking-[0.14px]">
+                Przedstawimy Ci projekty koncepcyjne  w postaci wirtualnego spaceru animowanego w technologii 3D.
+                </p>
+              </li>
+            
+            <li>
+                <button
+                    class="relative flex items-center text-mainGreen dark:text-green font-normal text-center text-base leading-[24px] tracking-[0.16px] pb-1 focus:outline-none border-b-2 border-mainGreen">
+                    Dowiedz się więcej
+                    <img class="ml-[10px]" src="./publik/svg/greenArrow-right.svg" alt="" />
+                </button>
+            </li>
+            </ul>
+          </li>
+          <li class="w-[378px] px-10 py-12 bg-white rounded-3xl">
+            <ul class="">
+              <li class="mb-8">
+                <img src="./publik/svg/realise.svg" alt="" />
+              </li>
+              <li class="mb-3">
+                <h3 class="text-black text-[28px] dark:text-white font-medium text-xl leading-[32.2px] tracking-[1.4px]" >Realizacje</h3>
+              </li>
+              <li class="mb-[63px]">
+                <p class="text-black text-[14px] dark:text-white font-normal text-sm leading-[21px] tracking-[0.14px]">
+                Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.
+                </p>
+              </li>
+            <li>
+                <button
+                    class="relative flex items-center text-mainGreen dark:text-green font-normal text-center text-base leading-[24px] tracking-[0.16px] pb-1 focus:outline-none border-b-2 border-mainGreen">
+                    Dowiedz się więcej
+                    <img class="ml-[10px]" src="./publik/svg/greenArrow-right.svg" alt="" />
+                </button>
+            </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="index.js"></script>
+    <script src="select.js"></script>
+  </body>
 </html>
