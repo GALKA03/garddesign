@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "masonry-layout": "^4.2.2",
-    "simplelightbox": "^2.14.1"
+    "simplelightbox": "^2.14.1",
+    "tw-elements": "^1.0.0-beta3"
   }
 }

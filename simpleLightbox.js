@@ -1,9 +1,38 @@
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
 
-document.addEventListener('DOMContentLoaded', function () {
-  const lightbox = new SimpleLightbox('.gallery a', {
-    /* Additional options */
-    navText: ['<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16"><path d="M9.817 14.94c.189.198.44.296.686.296.247 0 .497-.098.686-.296.378-.395.378-1.036 0-1.43L4.667 8l6.522-5.806c.378-.395.378-1.036 0-1.43-.378-.395-.993-.395-1.372 0L1.29 7.434a1.01 1.01 0 000 1.43l8.185 7.072a1.003 1.003 0 001.373 0zM15 0a1.01 1.01 0 00-.316-.744A1.01 1.01 0 0014.24.01L9.66 4.55a1.003 1.003 0 000 1.43L14.24 10.99a1.01 1.01 0 00.444.274 1.01 1.01 0 00.315-1.454l-4.58-4.54L14.56.01A1.01 1.01 0 0015 0z"/></svg>','<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16"><path d="M6.22.06a1.003 1.003 0 00-1.373 0L.252 7.132a1.003 1.003 0 000 1.43l8.184 7.072c.378.395.993.395 1.372 0 .378-.395.378-1.036 0-1.43L2.333 8l6.522-5.806c.378-.395.378-1.036 0-1.43-.378-.395-.994-.395-1.373 0L6.22.06zM.316.744A1.01 1.01 0 000 1.26v13.48c0 .551.447.995.995.995a.997.997 0 00.68-.262l4.58-4.54a1.003 1.003 0 000-1.43L1.675 1.016a1.003 1.003 0 00-.359-.272A1.01 1.01 0 00.316.744z"/></svg>'],
-  });
-});
+const imgConteiner = document.querySelector('ul');
+const galleryMarcup = createGalaryMarcup(galleryItems);
+imgConteiner.insertAdjacentHTML('beforeend',galleryMarcup)
+let lightbox = new SimpleLightbox('.gallery a', {captionDelay:250 });
+    console.log(lightbox)
+
+imgConteiner.addEventListener('click', onPicturesClick)
+
+function onPicturesClick(event){
+  event.preventDefault();
+
+ const noEventGallary = event.target.nodeName;
+    
+  if (noEventGallary !== 'IMG'){
+        return;
+    }
+ const instance = basicLightbox.create(`
+      <img src="${event.target.dataset.source}" width="800" height="600">
+   `, { onShow: () => { document.addEventListener('keydown',onInstanceclik)},
+   onClose:()=> {document.removeEventListener('keydown',onInstanceclik)}   }
+   )
+   instance.show()
+      function onInstanceclik(event){
+if(event.code === "Escape"){
+instance.close()
+}
+}}
+
+function onPicturesClick(event){
+  event.preventDefault();
+
+ const noEventGallary = event.target.nodeName;
+     //если действие происходит не в нашем диве == ничего не происходит 
+  if (noEventGallary !== 'IMG'){
+        return;
+    }
+}
