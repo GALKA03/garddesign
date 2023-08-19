@@ -23,109 +23,163 @@
       href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
     />
   </head>
-  <body class="bg-mainGray">
+  <body >
+
     <header
-      class="container mx-auto py-[24px] jg:px-0 bg-white relative flex w-1262 items-center justify-between text-neutral-600"
+      class=" mx-auto relative bg-white text-neutral-400"
     >
-      <div>
-        <img src="./publik/image/giarddesign.png" alt="logo" />
-      </div>
-      <nav
-        class="text-base font-normal leading-6 tracking-tight text-black dark:text-white"
-      >
-        <ul class="w-full flex items-center justify-between">
+
+<!-- Mobile Menu Button -->
+
+
+<!-- Mobile Menu Content -->
+<div class="hidden mx-auto md:hidden" id="navbar-dropdown">
+  <ul class="flex flex-col  items-center justify-between space-y-4 p-4 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <li>
+      <a href="#" class="text-black hover:text-mainGreen focus:text-mainGreen">Oferta</a>
+      <!-- Dropdown menu -->
+      <div id="dropdownNavbar"
+        class="hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400">
           <li>
-            <select
-              data-te-select-init
-              data-te-select-visible-options="3"
-              id="ofertaSelect"
-            >
-              <option value="1">Oferta</option>
-              <option value="2" data-href="https://example.com/link2">
-                Two
-              </option>
-              <option value="3" data-href="https://example.com/link3">
-                Three
-              </option>
-              <option value="4" data-href="https://example.com/link4">
-                Four
-              </option>
-              <option value="5" data-href="https://example.com/link5">
-                Five
-              </option>
-            </select>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Lato</a>
           </li>
           <li>
-            <a
-              href="#"
-              class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-              >O firmie</a
-            >
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Zima</a>
           </li>
           <li>
-            <a
-              href="#"
-              class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-              >Realizacje</a
-            >
+            <a href="#"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Jesień</a>
           </li>
           <li>
-            <a
-              href="#"
-              class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-              >Kontakt</a
-            >
-          </li>
-          <li id="searchIcon" class="cursor-pointer flex items-center">
-            <img id="search" src="./publik/svg/search.svg" alt="search" />
-            <input
-              type="text"
-              placeholder="Search..."
-              class="border p-2 rounded ml-2 hidden"
-            />
-            <img
-              id="cross"
-              src="./publik/svg/cross-svgrepo-com.svg"
-              alt="cross"
-              class="ml-2 hidden"
-            />
+            <a href="#"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Wiosna</a>
           </li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="flex mb-[120px] bg-mainColor">
-        <div
-          class="w-[1440px] flex flex-col justify-center px-4 py-8 md:py-0 md:pl-8 md:pr-16 md:w-[688px]"
-        >
-          <h1 class="text-black text-5xl font-medium leading-tight">
-            Nowoczesna aranżacja Twojego ogrodu
-          </h1>
-          <p class="text-gray-600 mt-4">
-            Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
-            realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
-            podejściem do każdego projektu.
-          </p>
-          <div class="flex w-full mt-[72px]">
-            <button
-              class="mr-9 bg-transparent justify-between rounded-3xl items-center min-w-min py-[14px] px-[26px] text-mainGreen border-2 border-mainGreen hover:text-mainGray hover:bg-mainGreen focus:outline-none focus:ring-2 focus:ring-mainGreen focus:text-mainGray transition-all ease-in-out duration-400"
-            >
-              Skontaktuj się z nami
-            </button>
-            <button
-              class="mr-9 bg-transparent justify-between rounded-3xl items-center min-w-min py-[14px] px-[26px] text-mainGreen border-2 border-mainGreen hover:text-mainGray hover:bg-mainGreen focus:outline-none focus:ring-2 focus:ring-mainGreen focus:text-mainGray transition-all ease-in-out duration-400 flex"
-            >
-              Zobacz nasze realizacje
-              <img
-                class="ml-1 fill-mainGreen hover:fill-mainGray transition-colors duration-400"
-                src="./publik/svg/arrowDown.svg"
-                alt=""
-              />
-            </button>
-          </div>
+        <div class="py-1">
+          <a href="#"
+            class="block px-4 py-2 text-sm text-mainGreen hover:font-bold hover:text-mainGreen dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign
+            out</a>
         </div>
+      </div>
+    </li>
+    <li>
+      <a href="#" class="text-black hover:text-mainGreen focus:text-mainGreen">O firmie</a>
+    </li>
+    <li>
+      <a href="#" class="text-black hover:text-mainGreen focus:text-mainGreen">Realizacje</a>
+    </li>
+    <li>
+      <a href="#" class="text-black hover:text-mainGreen focus:text-mainGreen">Contact</a>
+    </li>
+    <li id="searchIcon" class="cursor-pointer flex items-center">
+      <img id="search" src="./publik/svg/search.svg" alt="search" class="flex-shrink-0" />
+      <input type="text" placeholder="Search..." class="outline-none border-b-2 p-2 rounded ml-2 hidden" />
+      <img id="cross" src="./publik/svg/cross-svgrepo-com.svg" alt="cross" class="ml-2 hidden" />
+    </li>
+  </ul>
+</div>
+<div class="md:hidden w-full py-8">
+<button data-collapse-toggle="navbar-dropdown" type="button"
+  class="absolute top-0 right-0 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+  aria-controls="navbar-dropdown" aria-expanded="false">
+  <span class="sr-only">Toggle menu</span>
+  <!-- Menu icon -->
+  <svg id="menuIcon" class="w-5 h-5 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+    viewBox="0 0 17 14">
+    <path stroke="currentColor" class="absolute top-1 right-1" stroke-linecap="round" stroke-linejoin="round"
+      stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+  </svg>
+  <!-- Close icon (hidden by default) -->
+  <svg id="closeIcon" fill="#000000" height="20px" width="20px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve">
+    <path
+      d="M7.949,482.051c-6.249,6.248-6.249,16.379,0,22.627C9.098,507.901,13.549,510,18,510s8.902-2.099,11.051-4.22 l232.623-232.623L477.297,505.78C479.448,507.901,483.899,510,488.349,510s8.902-2.099,11.051-4.22 c6.249-6.248,6.249-16.379,0-22.627L261.075,254.129L482.4,32.804c6.249-6.248,6.249-16.379,0-22.627 c-6.248-6.249-16.379-6.249-22.628,0L238.448,231.502L17.122,9.177c-6.248-6.249-16.379-6.249-22.628,0 c-6.249,6.248-6.249,16.379,0,22.627L217.797,254.129L9.175,462.751C5.926,466.999,3.827,471.45,3.827,475.901 C3.827,480.351,5.926,484.802,9.175,489.05C11.326,491.172,15.777,493.271,20.227,493.271S29.128,491.172,31.277,489.05 l208.621-208.621L462.75,475.901c6.249,6.248,16.379,6.248,22.627,0c6.249-6.248,6.249-16.379,0-22.627L261.075,232.273 L9.452,9.95c-6.249-6.248-16.379-6.248-22.627,0c-6.249,6.248-6.249,16.379,0,22.627L217.797,254.398L7.949,464.246 C4.7,468.494,2.601,472.945,2.601,477.396C2.601,481.846,4.7,486.297,7.949,490.545z"
+      class="absolute top-1 right-1" />
+  </svg>
+
+</button>
+</div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex items-center justify-between py-6">
+      <a href="#" class="flex items-center" id="logoLink">
+        <img src="./publik/image/giarddesign.png" alt="logo" id="logoImage" />
+      </a>
+
+      <ul class="flex justify-between items-center space-x-8">
+        <li class="">
+          <a href="#" class="text-black hover:text-mainGreen focus:text-mainGreen">Oferta</a>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar"
+            class="absolute left-0 mt-0 z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400">
+              <li class="mb-30px">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Lato</a>
+              </li>
+              <li class="mb-10px">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Zima</a>
+              </li>
+              <li class="mb-10px">
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Jesień</a>
+              </li>
+              <li >
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Wiosna</a>
+              </li>
+            </ul>
+            <div class="py-1">
+              <a href="#"
+                class="block px-4 py-2 text-sm text-mainGreen hover:font-bold hover:text-mainGreen dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign
+                out</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-mainGreen focus:text-mainGreen">O firmie</a>
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-mainGreen focus:text-mainGreen">Realizacje</a>
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-mainGreen focus:text-mainGreen">Contact</a>
+        </li>
+        <li id="searchIcon" class="cursor-pointer flex items-center">
+          <img id="search" src="./publik/svg/search.svg" alt="search" class="flex-shrink-0" />
+          <input type="text" placeholder="Search..." class="outline-none border-b-2 p-2 rounded ml-2 hidden" />
+          <img id="cross" src="./publik/svg/cross-svgrepo-com.svg" alt="cross" class="ml-2 hidden" />
+        </li>
+      </ul>
+    </nav>
+    </header>
+    <main class="bg-mainGray">
+      <section class="block  md:flex mb-[120px] bg-mainColor "">
+          <div
+            class=" flex flex-col justify-center items-center px-4 py-8 md:py-0 md:pl-8 md:pr-16 md:w-[688px] sm:w-full md:block">
+            <h1 class="text-black text-5xl font-medium leading-tight text-center md:text-left">
+              Nowoczesna aranżacja Twojego ogrodu
+            </h1>
+            <p class="text-gray-600 mt-4 text-center md:text-left">
+              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+              realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+              podejściem do każdego projektu.
+            </p>
+            <div class="flex w-full mt-[72px] justify-center md:justify-start">
+              <button
+                class="mr-9 bg-transparent justify-between rounded-3xl items-center min-w-min py-[14px] px-[26px] text-mainGreen border-2 border-mainGreen hover:text-mainGray hover:bg-mainGreen focus:outline-none focus:ring-2 focus:ring-mainGreen focus:text-mainGray transition-all ease-in-out duration-400">
+                Skontaktuj się z nami
+              </button>
+              <button
+                class="mr-9 bg-transparent justify-between rounded-3xl items-center min-w-min py-[14px] px-[26px] text-mainGreen border-2 border-mainGreen hover:text-mainGray hover:bg-mainGreen focus:outline-none focus:ring-2 focus:ring-mainGreen focus:text-mainGray transition-all ease-in-out duration-400 flex">
+                Zobacz nasze realizacje
+                <img class="ml-1 fill-mainGreen hover:fill-mainGray transition-colors duration-400"
+                  src="./publik/svg/arrowDown.svg" alt="" />
+              </button>
+            </div>
+          </div>
         <div
-          class="w-full relative md:w-[688px] h-[737px] md:h-auto md:order-2"
+          class="w-full relative h-6  sm:block   md:w-[688px] h-auto md:h-auto md:order-2"
         >
           <img
             src="/publik/image/hero-1x.jpg"
@@ -147,7 +201,7 @@
 
       <!-- work section -->
       <section class="mb-[96px] bg-mainGray">
-        <div class="w-[1040px] ml-auto mr-auto">
+        <div class="container ml-auto mr-auto">
           <p class="text-sm mb-4 leading-6 tracking-tight text-mainGreen mt-4">
             Oferta
           </p>
@@ -164,11 +218,16 @@
           </p>
         </div>
       </section>
+
+      
       <!-- about section -->
-      <section class="bg-mainGray mb-[160px]">
-        <div class="w-[1440px]">
-          <ul class="flex justify-around items-center w-full">
-            <li class="w-[378px] px-10 py-12 bg-white rounded-3xl">
+
+
+
+      <section class="bg-mainGray mb-[60px] md:mb-[160px]">
+        <div class="container">
+          <ul class=" block   md:flex  flex-wrap justify-around  items-center w-full ">
+            <li class="w-[378px] px-10 py-12 bg-white rounded-3xl mb-4 lg:mr-[64px] mx-auto">
               <ul class="">
                 <li class="mb-8">
                   <img src="./publik/svg/progects.svg" alt="" />
@@ -180,7 +239,7 @@
                     Projekty
                   </h3>
                 </li>
-                <li class="mb-[63px]">
+                <li class="mb-[20px] lg:mb-[63px]">
                   <p
                     class="text-black text-[14px] dark:text-white font-normal text-sm leading-[21px] tracking-[0.14px]"
                   >
@@ -202,7 +261,7 @@
                 </li>
               </ul>
             </li>
-            <li class="w-[378px] px-10 py-12 bg-white rounded-3xl">
+            <li class="w-[378px] px-10 py-12 bg-white rounded-3xl mb-4  lg:mr-[64px] mx-auto">
               <ul class="">
                 <li class="mb-8">
                   <img src="./publik/svg/wisual.svg" alt="" />
@@ -214,7 +273,7 @@
                     Wizualizacje
                   </h3>
                 </li>
-                <li class="mb-[63px]">
+                <li class=" mb-[20px] lg:mb-[63px]">
                   <p
                     class="text-black text-[14px] dark:text-white font-normal text-sm leading-[21px] tracking-[0.14px]"
                   >
@@ -237,7 +296,7 @@
                 </li>
               </ul>
             </li>
-            <li class="w-[378px] px-10 py-12 bg-white rounded-3xl">
+            <li class="w-[378px] px-10 py-12 bg-white rounded-3xl mx-auto">
               <ul class="">
                 <li class="mb-8">
                   <img src="./publik/svg/realise.svg" alt="" />
@@ -249,7 +308,7 @@
                     Realizacje
                   </h3>
                 </li>
-                <li class="mb-[63px]">
+                <li class="mb-[20px] lg:mb-[63px]">
                   <p
                     class="text-black text-[14px] dark:text-white font-normal text-sm leading-[21px] tracking-[0.14px]"
                   >
@@ -277,55 +336,46 @@
 
       <!-- tvirchasectia -->
 
-      <section class="bg-mainGreen">
-        <div class="w-1440px mb-[120px] flex justify-between items-center">
-          <!-- <div class=""> -->
-          <img class="w-[688px]" src="./publik/image/house-2x.jpg" alt="" />
-          <!-- </div> -->
-          <div class="px-[90px] py-[130px] ml-[64px]">
-            <p
-              class="text-mainGray mb-4 text-xs font-normal leading-6 tracking-tight leading-150"
-            >
-              O firmie
-            </p>
-            <h2
-              class="text-4xl mb-10 font-semibold italic leading-115 text-mainGray"
-            >
-              Tworzymy z pasją
-            </h2>
-            <p
-              class="text-mainGray mb-[72px] text-base leading-6 tracking-tight leading-150"
-            >
-              Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
-              wykwalifikowani projektanci oraz architekci, których zadaniem jest
-              rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
-              specjalizacja to przestrzenie nowoczesne, które charakteryzuje
-              minimalizm, geometria i elegancka prostota. Tworzymy ogrody
-              małoobsługowe, dostosowane do współczesnego trybu życia.
-            </p>
-
-            <button
-              class="flex justify-between items-center bg-transparent rounded-3xl min-w-min py-[14px] px-[26px] text-mainGray border-2 border-mainGray group hover:text-mainGreen hover:bg-mainGray focus:outline-none focus:ring-2 focus:ring-mainGray focus:text-mainGreen transition-all ease-in-out duration-400"
-            >
-              Poznaj nas bliżej
-              <svg
-                class="ml-[10px] fill-current w-4 h-4 group-hover:text-mainGreen group-focus:text-mainGreen"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
-                />
-              </svg>
-            </button>
-          </div>
+    <section class="bg-mainGreen">
+      <div class="container mb-[60px] md:mb-[120px] flex flex-col md:flex-row justify-between items-center">
+        <div class="w-full md:w-1/2 mx-auto mb-8 md:mb-0 mr-[64px]">
+          <img class="w-full" src="./publik/image/house-2x.jpg" alt="" />
         </div>
-      </section>
+        <div class="w-full md:w-1/2 px-4 md:px-[90px] py-8 md:py-[130px] md:ml-[64px]">
+          <p class="text-mainGray mb-4 text-xs font-normal leading-6 tracking-tight leading-150">
+            O firmie
+          </p>
+          <h2 class="text-4xl mb-6 md:mb-10 font-semibold italic leading-115 text-mainGray">
+            Tworzymy z pasją
+          </h2>
+          <p class="text-mainGray mb-6 md:mb-[72px] text-base leading-6 tracking-tight leading-150">
+            Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani
+            projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja
+            potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które
+            charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody
+            małoobsługowe, dostosowane do współczesnego trybu życia.
+          </p>
+          <button
+            class="flex justify-between items-center bg-transparent rounded-3xl min-w-min py-[14px] px-[26px] text-mainGray border-2 border-mainGray group hover:text-mainGreen hover:bg-mainGray focus:outline-none focus:ring-2 focus:ring-mainGray focus:text-mainGreen transition-all ease-in-out duration-400">
+            Poznaj nas bliżej
+            <svg class="ml-[10px] fill-current w-4 h-4 group-hover:text-mainGreen group-focus:text-mainGreen"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" />
+            </svg>
+          </button>
+        </div>
+     
+      </div>
+    </section>
+
+
       <!-- gallery -->
 
       <section class="mb-[60px]">
         <div
           data-te-lightbox-init
-          class="grid grid-cols-2 md:grid-cols-3 gap-4 relative"
+          class="grid grid-cols-2 md:grid-cols-3 gap-4 relative pointer-events-auto"
         >
           <div class="grid gap-4">
             <!-- <div class="flex h-full w-full flex-1 flex-col"> -->
@@ -333,7 +383,7 @@
               <img
                 src="./publik/image/gallery/p1-1x.jpg"
                 data-te-img="./publik/image/gallery/p1-2x.jpg"
-                alt="Table Full of Spices"
+                alt="img 1"
                 class="h-auto max-w-full rounded-lg cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
               />
             </div>
@@ -341,7 +391,7 @@
               <img
                 src="./publik/image/gallery/p2-1x.jpg"
                 data-te-img="./publik/image/gallery/p2-2x.jpg"
-                alt="Coconut with Strawberries"
+                alt="img 2"
                 class="h-auto max-w-full rounded-lg cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
               />
             </div>
@@ -349,7 +399,7 @@
               <img
                 src="./publik/image/gallery/p3-1x.jpg"
                 data-te-img="./publik/image/gallery/p3-2x.jpg"
-                alt="Dark Roast Iced Coffee"
+                alt="img 3"
                 class="h-auto max-w-full rounded-lg cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
               />
             </div>
@@ -359,7 +409,7 @@
               <img
                 src="./publik/image/gallery/p4-1x.jpg"
                 data-te-img="./publik/image/gallery/p4-2x.jpg"
-                alt="Dark Roast Iced Coffee"
+                alt="img 4"
                 class="h-auto max-w-full rounded-lg cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
               />
             </div>
@@ -367,7 +417,7 @@
               <img
                 src="./publik/image/gallery/p5-1x.jpg"
                 data-te-img="./publik/image/gallery/p5-2x.jpg"
-                alt="Dark Roast Iced Coffee"
+                alt="img 5"
                 class="h-auto max-w-full rounded-lg cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
               />
             </div>
@@ -375,7 +425,7 @@
               <img
                 src="./publik/image/gallery/p6-1x.jpg"
                 data-te-img="./publik/image/gallery/p6-2x.jpg"
-                alt="Dark Roast Iced Coffee"
+                alt="img 6"
                 class="h-auto max-w-full rounded-lg cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
               />
             </div>
@@ -385,7 +435,7 @@
               <img
                 src="./publik/image/gallery/p7-1x.jpg"
                 data-te-img="./publik/image/gallery/p7-2x.jpg"
-                alt="Dark Roast Iced Coffee"
+                alt="img 7"
                 class="h-auto max-w-full rounded-lg cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
               />
             </div>
@@ -393,7 +443,7 @@
               <img
                 src="./publik/image/gallery/p8-1x.jpg"
                 data-te-img="./publik/image/gallery/p8-2x.jpg"
-                alt="Dark Roast Iced Coffee"
+                alt="img 8"
                 class="h-auto max-w-full rounded-lg cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
               />
             </div>
@@ -401,16 +451,28 @@
               <img
                 src="./publik/image/gallery/p9-1x.jpg"
                 data-te-img="./publik/image/gallery/p9-2x.jpg"
-                alt="Dark Roast Iced Coffee"
+                alt="img 9"
                 class="h-auto max-w-full rounded-lg cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
               />
             </div>
-<div style="background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 1.00) 100%);"
-  class="block w-full h-[1000px] absolute bottom-0 left-0 z-10"></div>
-          </div>
-    
-        
-
+            </div>
+  <!-- Gradient overlay -->
+ 
+<div class="block w-full h-[1000px] absolute bottom-0 left-0 z-100 pointer-events-none"
+  style="background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%)" id="gradient-overlay">
+  <!-- Button to reveal images -->
+  <button
+    class="absolute bottom-[45px] left-1/2 transform -translate-x-1/2 z-1000 flex justify-center items-center bg-transparent rounded-3xl min-w-min py-[12px] px-[22px] text-mainGreen border-2 cursor-pointer border-mainGreen group hover:text-mainGray hover:bg-mainGreen focus:outline-none focus:ring-2 focus:ring-mainGreen focus:text-mainGray transition-all ease-in-out duration-400"
+    style="border-radius: 200px; border: 1px solid  #111"
+    onclick="revealImages()">
+    Rozwiń
+    <svg width="16" height="16" viewBox="0 0 16 16" class="ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path id="Vector" fill="currentColor"
+        d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z" />
+    </svg>
+  </button>
+</div>
+</div>
       </section>
 
       <!-- contacts -->
@@ -506,11 +568,9 @@
       </div>
     </footer>
 
+    <script src="gallery-gradient.js"></script>
     <script src="index.js"></script>
     <script src="select.js"></script>
-
-    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
-
     <script
       type="text/javascript"
       src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
