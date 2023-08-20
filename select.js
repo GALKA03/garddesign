@@ -1,32 +1,28 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const dropdownButton = document.querySelector('[data-collapse-toggle="navbar-dropdown"]');
-  const dropdownNavbar = document.getElementById("navbar-dropdown");
-  const menuIcon = document.getElementById('menuIcon');
-  const closeIcon = document.getElementById('closeIcon');
-  const logoImage = document.getElementById('logoImage');
-  const header = document.querySelector('.container');
+  // Dropdown menu
+  const dropdownToggleButton = document.querySelector('[data-dropdown-toggle="dropdownNavbar"]');
+  const dropdownMenu = document.querySelector("#dropdownNavbar");
 
-  // Hide the close icon by default
-  closeIcon.classList.add("hidden");
+  dropdownToggleButton.addEventListener("click", () => {
+    dropdownMenu.classList.toggle("hidden");
+  });
 
-  if (dropdownButton && dropdownNavbar) {
-    dropdownButton.addEventListener("click", function () {
-      dropdownNavbar.classList.toggle("hidden");
-      menuIcon.classList.toggle("hidden");
-      closeIcon.classList.toggle("hidden");
-      logoImage.classList.toggle('hidden'); // Toggle the 'hidden' class on the logo image
-      header.classList.toggle('py-8'); // Toggle padding on header
-    });
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (event) => {
+    if (
+      !dropdownToggleButton.contains(event.target) &&
+      !dropdownMenu.contains(event.target)
+    ) {
+      dropdownMenu.classList.add("hidden");
+    }
+  });
 
-    // Close the dropdown when clicking outside of it
-    document.addEventListener("click", function (event) {
-      if (!dropdownButton.contains(event.target) && !dropdownNavbar.contains(event.target)) {
-        dropdownNavbar.classList.add("hidden");
-        menuIcon.classList.remove("hidden");
-        closeIcon.classList.add("hidden");
-        logoImage.classList.remove('hidden');
-        header.classList.remove('py-8');
-      }
-    });
-  }
+  // Mobile menu
+const mobileMenuToggleButton = document.querySelector('[data-collapse-toggle="navbar-dropdown"]');
+const menuIcon = document.getElementById('menuIcon');
+const closeIcon = document.getElementById('closeIcon');
+
+mobileMenuToggleButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  menuIcon.classList.toggle('hidden');
+  closeIcon.classList.toggle('hidden');
 });
