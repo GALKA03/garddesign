@@ -1,10 +1,11 @@
-import { Lightbox, initTE } from "tw-elements"; // Import the necessary modules
+import { Lightbox, Carousel, initTE } from "tw-elements"; // Import the necessary modules
 
-initTE({ Lightbox });
+initTE({ Lightbox, Carousel }); // Initialize both Lightbox and Carousel
 
-import {
-  Carousel,
-  initTE,
-} from "tw-elements";
 
-initTE({ Carousel });
+// onMount(async () => {
+//   if (browser) {
+//       const te = await import('tw-elements')
+//       console.log(te.initTE({ Modal: te.Modal }))
+//   }
+// })
