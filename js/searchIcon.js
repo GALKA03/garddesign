@@ -33,3 +33,5 @@ closeSVG.addEventListener('click', () => {
   searchSVG.classList.remove('hidden');
   searchInput.classList.add('hidden');
 });
+
+
