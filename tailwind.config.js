@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const twElements = require('tw-elements');
+
 module.exports = {
   darkMode: 'class', // Set to 'class' to enable dark mode with class-based switching
 
@@ -10,7 +10,8 @@ module.exports = {
   ],  
 
   // Specify plugins to use (include tw-elements plugin)
-  plugins: [require("tw-elements/dist/plugin.cjs")],
+  
+  plugins: [require('tw-elements/dist/plugin.cjs')],
 
   // Define your theme settings
   theme: {
