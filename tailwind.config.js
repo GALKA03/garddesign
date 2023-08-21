@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+const twElements = require('tw-elements');
 module.exports = {
   darkMode: 'class', // Set to 'class' to enable dark mode with class-based switching
 
   // Specify the content to process (HTML and JS files)
   content: [
     "./**/*.{html,js}",
-    // "./node_modules/tw-elements/dist/js/**/*.js"
+     "./node_modules/tw-elements/dist/js/**/*.js"
   ],  
 
   // Specify plugins to use (include tw-elements plugin)
