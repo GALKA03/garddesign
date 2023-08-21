@@ -4,7 +4,10 @@ const menuIcon = document.getElementById('menuIcon');
 const closeIcon = document.getElementById('closeIcon');
 const mobileMenu = document.getElementById('navbar-dropdown');
 
+
+
 mobileMenuToggleButton.addEventListener('click', () => {
+  console.log('Mobile menu button clicked');
   const isMenuOpen = mobileMenu.classList.toggle('hidden');
   if (isMenuOpen) {
     menuIcon.classList.add('hidden');
