@@ -10,10 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-  
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
     <link rel="stylesheet" href="./css/style.css" />
-  
+
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
       rel="stylesheet"
@@ -24,85 +24,176 @@
     />
   </head>
   <body>
-  <header class="mx-auto relative bg-white">
-    <nav class="bg-white text-[14px] font-normal">
-      <div class="relative  max-w-screen-xl flex items-center justify-around mx-auto jg:flex">
-        <a href="#" class="hidden md:flex items-center">
-          <img src="./publik/image/giarddesign.png" class="w-[115px]" alt="logo" id="logoImage" />
-        </a>
-        <button data-collapse-toggle="navbar-dropdown" type="button"
-          class="absolute top-1 right-1 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-dropdown" aria-expanded="false">
-          <svg id="menuIcon" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 20">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          <svg id="closeIcon" class="w-5 h-5 hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 18 18">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-        <div class="hidden md:block md:w-auto" id="navbar-dropdown">
-          <ul
-            class="flex flex-col font-normal text-black p-4 md:p-0 mt-4 border-none rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:justify-end items-center">
-            <li class="relative">
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-black rounded hover:text-mainGreen hover:font-bold focus:text-mainGreen focus:font-bold md:hover:bg-transparent md:border-0 md:hover:text-mainGreen md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-                Oferta
-                <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m1 1 4 4 4-4" />
-                </svg>
-              </button>
-              <!-- Dropdown menu -->
-              <div id="dropdownNavbar"
-                class="z-10 hidden font-normal absolute left-[70px] mt-0 lg:left-0 bg-white divide-y divide-white rounded-lg  w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul class="py-2 text-sm text-black dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                  <li><a href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Oferta</a>
-                  </li>
-                  <li><a href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Lato</a></li>
-                  <li><a href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Zima</a></li>
-                  <li><a href="#"
-                      class="block px-4 py-2 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Jesień</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 pl-3 pr-4 text-black rounded hover:text-mainGreen hover:font-bold  md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">O
-                firmie</a>
-            </li>
-            <li>
-              <a href="#"
-              class="block py-2 pl-3 pr-4 text-black rounded hover:text-mainGreen hover:font-bold  md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Realizacje</a>
-            </li>
-            <li>
-              <a href="#"
-              class="block py-2 pl-3 pr-4 text-black rounded hover:text-mainGreen hover:font-bold  md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Kontact</a>
-            </li>
-            <li id="searchIcon" class="cursor-pointer flex items-center">
-              <input type="text" placeholder="Search..." class="outline-none border-b-2 p-2 rounded ml-2 hidden" />
-              <img id="search" src="./publik/svg/search.svg" alt="search" class="flex-shrink-0" />
-              <img id="cross" src="./publik/svg/cross-svgrepo-com.svg" alt="cross" class="ml-2 hidden" />
-            </li>
-          </ul>
+    <header class="mx-auto relative bg-white">
+      <nav class="bg-white text-[14px] font-normal">
+        <div
+          class="relative max-w-screen-xl flex items-center justify-around mx-auto jg:flex"
+        >
+          <a href="#" class="hidden md:flex items-center">
+            <img
+              src="./publik/image/giarddesign.png"
+              class="w-[115px]"
+              alt="logo"
+              id="logoImage"
+            />
+          </a>
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="absolute top-1 right-1 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
+          >
+            <svg
+              id="menuIcon"
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <svg
+              id="closeIcon"
+              class="w-5 h-5 hidden"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <div class="hidden md:block md:w-auto" id="navbar-dropdown">
+            <ul
+              class="flex flex-col font-normal text-black p-4 md:p-0 mt-4 border-none rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:justify-end items-center"
+            >
+              <li class="relative">
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-black rounded hover:text-mainGreen hover:font-bold focus:text-mainGreen focus:font-bold md:hover:bg-transparent md:border-0 md:hover:text-mainGreen md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                >
+                  Oferta
+                  <svg
+                    class="w-2.5 h-2.5 ml-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal absolute left-[70px] mt-0 lg:left-0 bg-white divide-y divide-white rounded-lg w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-black dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Oferta</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Lato</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Zima</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
+                        >Jesień</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-black rounded hover:text-mainGreen hover:font-bold md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >O firmie</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-black rounded hover:text-mainGreen hover:font-bold md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Realizacje</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-black rounded hover:text-mainGreen hover:font-bold md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Kontact</a
+                >
+              </li>
+              <li id="searchIcon" class="cursor-pointer flex items-center">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  class="outline-none border-b-2 p-2 rounded ml-2 hidden"
+                />
+                <img
+                  id="search"
+                  src="./publik/svg/search.svg"
+                  alt="search"
+                  class="flex-shrink-0"
+                />
+                <img
+                  id="cross"
+                  src="./publik/svg/cross-svgrepo-com.svg"
+                  alt="cross"
+                  class="ml-2 hidden"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-    <main class=" bg-mainGray">
+    <main class="bg-mainGray">
       <section
-        class=" bg-mainColor mb-[60px] md:flex justify-between items-center md:mb-[120px]"
+        class="bg-mainColor mb-[60px] md:flex justify-between items-center md:mb-[120px]"
       >
-       
         <div
           class="container mx-auto py-[144px] md:px-[64px] md:pl-8 md:pr-16 md:w-1/2 sm:w-full md:block"
         >
@@ -174,7 +265,7 @@
               <img
                 src="./publik/image/house-2x.jpg"
                 alt="hero"
-                class="object-cover w-full md:w-[688px] h-auto  md:object-center"
+                class="object-cover w-full md:w-[688px] h-auto md:object-center"
               />
             </div>
           </div>
@@ -198,7 +289,7 @@
           </div>
         </div>
       </section>
-<!-- Działamy kompleksowo -->
+      <!-- Działamy kompleksowo -->
       <section class="mb-[60px] md:mb-[96px] bg-mainGray">
         <div class="container mx-auto">
           <p class="text-sm mb-4 leading-6 tracking-tight text-mainGreen mt-4">
@@ -224,11 +315,15 @@
         <div class="container mx-auto">
           <ul class="block md:flex justify-between items-center w-full">
             <li
-              class="min-w-min overflow-hidden  focus:shadow-lg hover:shadow-lg transition-shadow duration-400 md:w-[378px] px-10 py-12 bg-white rounded-3xl mb-4 lg:mb-0 md:mr-[64px]"
+              class="min-w-min overflow-hidden focus:shadow-lg hover:shadow-lg transition-shadow duration-400 md:w-[378px] px-10 py-12 bg-white rounded-3xl mb-4 lg:mb-0 md:mr-[64px]"
             >
               <ul class="">
                 <li class="mb-8">
-                  <img src="./publik/svg/progects.svg" class="hover:scale-y-110 focus:scale-y-110" alt="" />
+                  <img
+                    src="./publik/svg/progects.svg"
+                    class="hover:scale-y-110 focus:scale-y-110"
+                    alt=""
+                  />
                 </li>
                 <li class="mb-3">
                   <h3
@@ -271,7 +366,11 @@
             >
               <ul class="">
                 <li class="mb-8">
-                  <img src="./publik/svg/wisual.svg" class="hover:scale-y-110 focus:scale-y-110" alt="" />
+                  <img
+                    src="./publik/svg/wisual.svg"
+                    class="hover:scale-y-110 focus:scale-y-110"
+                    alt=""
+                  />
                 </li>
                 <li class="mb-3">
                   <h3
@@ -314,7 +413,11 @@
             >
               <ul class="">
                 <li class="mb-8">
-                  <img src="./publik/svg/realise.svg" class="hover:scale-y-110 focus:scale-y-110" alt="" />
+                  <img
+                    src="./publik/svg/realise.svg"
+                    class="hover:scale-y-110 focus:scale-y-110"
+                    alt=""
+                  />
                 </li>
                 <li class="mb-3">
                   <h3
@@ -359,7 +462,7 @@
       <!-- tvirchasectia -->
 
       <section
-        class="bg-mainGreen  flex flex-col md:flex-row justify-between items-center overflow-x-hidden"
+        class="bg-mainGreen flex flex-col md:flex-row justify-between items-center overflow-x-hidden"
       >
         <div class="w-full mx-auto mb-8 md:mb-0 md:mr-[64px] relative">
           <!-- <div class="absolute left-0 top-0 -ml-[64px] w-full"> -->
@@ -374,13 +477,28 @@
           >
             O firmie
           </p>
-      <h2 style="font-family: Montserrat; font-size: 48px; font-style: normal; line-height: 115%"
-        class="text-4xl mb-6 md:mb-10 font-semibold italic leading-115 text-mainGray">
-        Tworzymy <br style="font-family: Inter; font-size: 48px; font-style: italic; line-height: 115%" />
-        <span style="font-style: italic;">z pasją</span>
-      </h2>
+          <h2
+            style="
+              font-family: Montserrat;
+              font-size: 48px;
+              font-style: normal;
+              line-height: 115%;
+            "
+            class="text-4xl mb-6 md:mb-10 font-semibold italic leading-115 text-mainGray"
+          >
+            Tworzymy
+            <br
+              style="
+                font-family: Inter;
+                font-size: 48px;
+                font-style: italic;
+                line-height: 115%;
+              "
+            />
+            <span style="font-style: italic">z pasją</span>
+          </h2>
           <p
-            class="text-mainGray  md:mb-[72px] text-base leading-6 tracking-tight leading-150"
+            class="text-mainGray md:mb-[72px] text-base leading-6 tracking-tight leading-150"
           >
             Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
             wykwalifikowani projektanci oraz architekci, których zadaniem jest
@@ -407,11 +525,19 @@
 
       <!-- gallery -->
       <section class="mb-[60px] bg-mainColor relative">
-        <div class="pt-11 font-medium md:ml-[160px] md:pt-[120px] ">     
-             <p class="text-mainGreen  mb-40px md:mb-4 text-[12px]">Realizacje</p>
-        <h2 class="text-black font-medium mb-[95px]  leading-115 tracking-tight text-[48px]" style="font-family: Montserrat; letter-spacing: -1.44px;">Nasze
-          <span style="font-family: Inter;  font-style: italic;" class="text-[48px] font-medium" >projekty</span> </h2>
-
+        <div class="pt-11 font-medium md:ml-[160px] md:pt-[120px]">
+          <p class="text-mainGreen mb-40px md:mb-4 text-[12px]">Realizacje</p>
+          <h2
+            class="text-black font-medium mb-[95px] leading-115 tracking-tight text-[48px]"
+            style="font-family: Montserrat; letter-spacing: -1.44px"
+          >
+            Nasze
+            <span
+              style="font-family: Inter; font-style: italic"
+              class="text-[48px] font-medium"
+              >projekty</span
+            >
+          </h2>
         </div>
 
         <div
@@ -586,19 +712,51 @@
           <ul
             class="w-full md:w-1/2 flex justify-center md:justify-start items-center space-x-6 text-[14px] text-mainGray text-base font-normal leading-150 tracking-tighter"
           >
-            <li><a href="#" class="">Kontakt</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">LinkedIn</a></li>
-          </ul>
-          <ul
-            class="w-full md:w-1/2 flex justify-center md:justify-end items-center space-x-6 text-[14px] text-mainGray text-base font-normal leading-150 tracking-tighter"
-          >
             <li>
-              <p>000-000-000</p>
+              <a
+                href="#"
+                class="hover:text-mainGray hover:font-bold focus:text-mainGray focus:font-bold transition-all duration-400"
+                >Kontakt</a
+              >
             </li>
             <li>
-              <p>giarddesign@kontakt.pl</p>
+              <a
+                href="#"
+                class="hover:text-mainGray hover:font-bold focus:text-mainGray focus:font-bold transition-all duration-400"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-mainGray hover:font-bold focus:text-mainGray focus:font-bold transition-all duration-400"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-mainGray hover:font-bold focus:text-mainGray focus:font-bold transition-all duration-400"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+          <ul
+            class="w-full md:w-1/2 flex justify-center md:justify-end items-center space-x-6 text-[14px] text-mainGray text-base font-normal leading-350 tracking-tighter"
+          >
+            <li>
+              <a
+                href="000-000-000"
+                class="hover:text-mainGray hover:font-bold focus:text-mainGray focus:font-bold transition-all duration-300"
+                >000-000-000</a
+              >
+            </li>
+            <li>
+              <a
+                href="giarddesign@kontakt.pl"
+                class="hover:text-mainGray hover:font-bold focus:text-mainGray focus:font-bold transition-all duration-300"
+                >giarddesign@kontakt.pl</a
+              >
             </li>
           </ul>
         </div>
@@ -640,17 +798,41 @@
       </div>
     </div>
 
+    <!-- Back to top button -->
+    <button
+      type="button"
+      data-te-ripple-init
+      data-te-ripple-color="light"
+      class="!fixed bottom-5 right-5 hidden p-6 rounded-full bg-mainGray text-3xl font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-mainColor hover:shadow-lg focus:bg-mainColor focus:shadow-lg focus:outline-none focus:ring-0 active:bg-mainColor active:shadow-lg"
+      id="btn-back-to-top"
+    >
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        class="h-4 w-4"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+      >
+        <path
+          fill="currentColor"
+          d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+        ></path>
+      </svg>
+    </button>
+
     <script src="./js/gallery-gradient.js"></script>
     <script type="module" src="./js/index.js"></script>
-
-    <script src="./js/select.js"></script>
-    <script src="./js/searchIcon.js"></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/dpdown.js"></script>
-    <script src="./js/button-gallery.js"></script>
+    <script type="module" src="./js/scrollup.js"></script>
+    <script type="module" src="./js/select.js"></script>
+    <script type="module" src="./js/searchIcon.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/dpdown.js"></script>
+    <script type="module" src="./js/button-gallery.js"></script>
     <script
-    type="text/javascript"
-    src="./node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
+      type="text/javascript"
+      src="./node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
     ></script>
   </body>
 </html>
